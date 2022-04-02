@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Odin;
+    src: url(../fonts/Norse-Bold.otf);
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: plum;
+}
+a:hover{
+    color: brown;
+}
+html, body{
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow:hidden; /*IMPORTANT*/
+}
+body {
+    box-sizing: border-box;
+    border: solid red 1px;
+}
+.sidebar {
+    width: fit-content; /*to make parent element take child element's (background image's) width*/
+    height: inherit;
+    position:relative;
+    /* border: solid red 2px; */
+}
+#background {
+    max-width: 550px;
+    height: inherit;
+}
+.banner {
+    width: 520px;
+    height: 150px ;
+    position: absolute;
+    z-index: 1;
+    top: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner > div {
+    width: 520px;
+    height: 150px ;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+}
+.banner > p {
+    color: aliceblue;
+    /* display: inline; */
+    font-size: 100px;
+    font-family: Odin, sans-serif;
+}
+.banner > img {
+    width: 100px;
+    height: auto;
+}
+.credit {
+    width: 520px;
+    height: 50px ;
+    position: absolute;
+    z-index: 1;
+    top: 730px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.credit > div {
+    width: 520px;
+    height: 50px ;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    display: inline;
+}
+.credit > p {
+    color: aliceblue;
+    font-family: sans-serif;
+    display: inline;
+}
