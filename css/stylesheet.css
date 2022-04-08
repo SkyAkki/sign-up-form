@@ -31,7 +31,7 @@ html, body{
 }
 body {
     box-sizing: border-box;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 p{
     margin: 0px;
@@ -103,18 +103,18 @@ p{
     height: inherit;
     width: 66vw;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     background-color: #f9fafb;
     gap: 30px;
 }
 .form-area > main{
     background-color: #ffffff;
-    box-shadow: 0px 3px 5px 0.5px lightgray; /*Trick is to use y-axis offset value just a little lesser than blur redius*/
+    
 }
 form{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 30px;
     gap: 20px;
     padding-bottom: 30px;
 }
@@ -124,9 +124,18 @@ label{
 }
 form > h2 {
     flex-basis: 100%;
+    padding-left: 30px;
 }
-form > .inputs {
-    flex-basis: 45%;
+.inputs {
+    flex-basis: 45%; /*Important*/
+}
+.input-area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    box-shadow: 0px 3px 5px 0.5px lightgray; /*Trick is to use y-axis offset value just a little lesser than blur redius*/
 }
 header, footer{
     padding-left: 30px;
@@ -138,9 +147,13 @@ header {
     align-items: flex-end;
     font-size: 20px;
     font-weight: 800;
+    /* padding-left: 30px; */
 }
 footer {
     align-items: flex-start;
+    padding-top: 30px;
+    /* padding-left: 30px; */
+    gap:20px;
 }
 footer>p{
     flex-basis: 100%;
